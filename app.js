@@ -2,7 +2,7 @@
  * @Author: Marte
  * @Date:   2017-01-07 09:37:57
  * @Last Modified by:   Marte
- * @Last Modified time: 2017-01-07 15:24:42
+ * @Last Modified time: 2017-01-07 15:39:55
  */
 
 var http = require("http"); // http 网路
@@ -24,7 +24,6 @@ var song = [];
  * @param res.setEncoding('utf8');
  */
 function getHtml(href, page) {
-    console.log(page)
     var html = ""; //html
     var req = http.get(href + page + '&third_type=', function(res) {
         res.setEncoding('utf8');
